@@ -1,6 +1,6 @@
 name: Django-app workflow
 
-on: [push]
+on: [ push ]
 
 jobs:
   tests:
@@ -25,3 +25,6 @@ jobs:
         run: |
           # Запуск проверки проекта по flake8
           python -m flake8
+          # Перейти в папку, содержащую manage.py
+          # <корневая_папка/<папка_проекта>/manage.py
+          python manage.py test
