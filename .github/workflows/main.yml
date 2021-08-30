@@ -27,4 +27,6 @@ jobs:
           python -m flake8
           # Перейти в папку, содержащую manage.py
           # <корневая_папка/<папка_проекта>/manage.py
+          cd infra_project/
+          # запустить написанные разработчиком тесты
           python manage.py test
